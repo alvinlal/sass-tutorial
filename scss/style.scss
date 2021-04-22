@@ -18,10 +18,49 @@ body {
   background-color: $primary-color;
   color: #ffff;
   height: 600px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style: none;
+    }
+    li {
+      padding: 15px;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+  a {
+    color: #fff;
+  }
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 50%;
+    }
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
 }
 
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
