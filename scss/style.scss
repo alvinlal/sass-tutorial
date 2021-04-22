@@ -1,7 +1,6 @@
-$light-color: #f4f4f4;
-$font-stack: Arial, Helvetica, sans-serif;
-$primary-color: #0e6cff;
-$secondary-color: #ff8700;
+@import "theme";
+@import "utilities";
+@import "buttons";
 
 * {
   box-sizing: border-box;
@@ -61,11 +60,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-.container {
-  max-width: 1100px;
-  padding: 0 30px;
-  margin: 0 auto;
-  overflow: auto;
 }
