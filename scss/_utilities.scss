@@ -39,3 +39,19 @@ $spaceamounts: (1, 2, 3, 4, 5);
     padding: #{$space}rem 0;
   }
 }
+
+// set differenet colors for different links
+
+$linkColors: (
+  youtube: #d16e8d,
+  articles: #ffac83,
+  community: #3f78c9,
+  courses: #49c4a3,
+);
+
+@each $name, $color in $linkColors {
+  .#{$name} {
+    color: #{$color};
+    font-weight: bold;
+  }
+}

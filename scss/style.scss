@@ -15,7 +15,7 @@ body {
 
 .showcase {
   @include set-background($primary-color);
-  height: 600px;
+  min-height: 100vh;
 
   nav {
     display: flex;
@@ -58,6 +58,28 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.content {
+  background: white;
+  width: 70vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  p {
+    font-size: 1.125em;
+    line-height: 1.6;
+  }
+}
+
+.title {
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  color: #ee6352;
+  line-height: 0.8;
 }
 
 @import "mobile";
