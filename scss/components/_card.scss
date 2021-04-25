@@ -1,5 +1,21 @@
 @use '../abstracts' as *;
 
+// set differenet colors for different links
+
+$linkColors: (
+  youtube: #d16e8d,
+  articles: #ffac83,
+  community: #3f78c9,
+  courses: #49c4a3,
+);
+
+@each $name, $color in $linkColors {
+  .#{$name} {
+    color: #{$color};
+    font-weight: bold;
+  }
+}
+
 .card {
   background: $primary-color;
   width: 70vw;
@@ -9,5 +25,14 @@
   p {
     font-size: 1.125em;
     line-height: 1.6;
+  }
+  h1 {
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: #ee6352;
+    line-height: 0.8;
   }
 }
